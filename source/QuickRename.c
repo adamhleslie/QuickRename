@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <dirent.h>
+#include <string.h>
 
 static const char* const FILE_TYPE = ".xwm";
 static const int MAX_FILES = 111;
