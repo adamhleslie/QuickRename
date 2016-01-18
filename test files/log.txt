@@ -1,8 +1,0 @@
-Renamed huh.xwm to MUS001.xwm
-Renamed huh2.xwm to MUS002.xwm
-Renamed okey.xwm to MUS003.xwm
-Renamed other.xwm to MUS004.xwm
-Renamed what.xwm to MUS005.xwm
-
-5 files ready
-
