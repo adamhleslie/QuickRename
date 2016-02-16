@@ -67,17 +67,17 @@ int main()
             return 1;
         }
 
-        /* loop through all files in the current directory */
+        // loop through all files in the current directory
         while ((entry_ptr = readdir(dir_ptr)) && files_valid)
         {
-            /* check if file is of valid type */
+            // check if file is of valid type
             cur_file_type = strrchr(entry_ptr->d_name, '.');
             if (cur_file_type && !strcmp(cur_file_type, FILE_TYPE))
             {
-                /* check if valid file is already named correctly */
+                // check if valid file is already named correctly
                 if ((cur_name_val = getNameVal(entry_ptr->d_name)) == 0)
                 {
-                    /* rename with the next name, if already taken continue with next */
+                    // rename with the next name, if already taken try with next name
                     while (rename(entry_ptr->d_name, new_name) && files_valid)
                     {
                         files_valid = incrementName(new_name, &file_count);
